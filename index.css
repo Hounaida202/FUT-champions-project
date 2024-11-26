@@ -1,0 +1,38 @@
+
+header{
+    background-color: rgb(2, 2, 1);
+    height: 60px;
+    width: 100%;
+    display: flex;
+
+}
+header div img{
+    height: 50px;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+header h3{
+    color: white;
+    margin-left: 5px;
+}
+header div input{
+height: 30px;
+width: 200px;
+margin-top: 15px;
+border: none;
+margin-left: 200px;
+border-radius: 10px;
+padding-left: 5px;
+}
+header button{
+    color: white;
+    margin-left: 5px;
+    height: 30px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 300px;
+    background-color: green;
+    border: none;
+    border-radius: 5px;
+    width: 80px;
+}
