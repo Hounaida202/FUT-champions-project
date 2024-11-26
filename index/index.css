@@ -37,7 +37,7 @@ header button{
     width: 80px;
 }
 body{
-    background-color: rgb(11, 66, 11);
+    background-color: rgb(16, 60, 16);
 
 }
 section{
@@ -49,9 +49,10 @@ section{
 .stadium-item img{
 height: 400px;
 width: 600px;
-margin-top: 30px;
 }
 .stadium-item{
+    margin-top: 50px;
+
     position: relative;
 }
 .positions-item{
@@ -64,7 +65,9 @@ width: 50%;
 margin-left: auto;
 margin-right: auto;
 display: flex;
-justify-content: space-evenly;
+justify-content: center;
+gap: 50px;
+margin-top: 40px;
 
 }
 .attack-div div button{
@@ -86,7 +89,9 @@ justify-content: space-evenly;
     margin-left: auto;
     margin-right: auto;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: 90px;
+    margin-top: 40px;
     
     }
     .defense-div{
@@ -94,7 +99,9 @@ justify-content: space-evenly;
         margin-left: auto;
         margin-right: auto;
         display: flex;
-        justify-content: space-evenly;
+        justify-content: center;
+        gap: 80px;
+        margin-top: 30px;
         
         }
         .defense-div div button{
@@ -110,6 +117,8 @@ justify-content: space-evenly;
             margin-right: auto;
             display: flex;
             justify-content: center;
+            margin-top: 50px;
+            
         }
         .garde button{
             height: 30px;
@@ -117,4 +126,9 @@ justify-content: space-evenly;
             border: black solid 2px;
             border-radius: 5px;
   
+        }
+        .positions-item{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
         }
