@@ -75,6 +75,13 @@ cardes+=`
 document.querySelector(".auto-remplissage-div").innerHTML = cardes;
 
 };
+let btn=document.getElementById("lw");
+let btnn=document.getElementById("btnn");
+
+let pageRemplissageContainer=document.querySelector(".page-remplissage-container");
+btn.addEventListener("click",function(){
+    pageRemplissageContainer.style.display="block"
+});
 
 
 
