@@ -89,7 +89,13 @@ btnn.addEventListener("click",function(){
     pageRemplissageContainer.style.display="none"
 });
 
+add.addEventListener("click",function(){
+    pageRemplirManuel.style.display="block"
+});
+exitAll.addEventListener("click",function(){
+    pageRemplirManuel.style.display="none"
 
+});
 
 
 
