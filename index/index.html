@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="/index/style.css">
 </head>
 <body>
+     <!-- ajouter le navbar  -->
     <header>
         <div>
             <img class="" src="/image/icons8-soccer-100.png" alt="">
@@ -18,87 +19,66 @@
          <button>Sign in</button>
 
     </header>
+    <!-- ------------------------------------ -->
     <section class="flex">
-    <section class="stadium-container">
+        <!-- ajouter la section du stadium -->
+             <section class="stadium-container">
+
         
-        <div class="stadium-item">
-            <img src="/image/st-removebg-preview.png" alt="">
-        </div>
-        <div class="positions-item">
-              <div class="attack-div">
-                <div class="carte-dev"><div class="player-card1"></div><button class="bouton" id="lw">LW</button></div>
-                <div class="carte-dev"><div class="player-card1"></div><button class="bouton" id="st">ST</button></div>
-                <div class="carte-dev"><div class="player-card1"></div><button class="bouton" id="rw">RW</button></div>
-              </div>
-              <div class="milieu-div">
-                <div class="carte-dev"><div class="player-card1"></div><button class="bouton" id="cm1">CM</button></div>
-                <div class="carte-dev"><div class="player-card1"></div><button class="bouton" id="cm2">CM</button></div>
-                <div class="carte-dev"><div class="player-card1"></div><button class="bouton" id="cm3">CM</button></div>
-              </div>
-              <div class="defense-div">
-                <div class="carte-dev"><div class="player-card1"></div><button class="bouton" id="lb">LB</button></div>
-                <div class="carte-dev"><div class="player-card1"></div><button class="bouton" id="cb1">CB</button></div>
-                <div class="carte-dev"><div class="player-card1"></div><button class="bouton" id="cb2">CB</button></div>
-                <div class="carte-dev"><div class="player-card1"></div><button class="bouton" id="rb">RB</button></div>
-              </div>
-              <div class="garde-div">
-                <div class="carte-dev"><div class="player-card1"></div><button class="bouton" id="gk">GK</button></div>
-              </div>
-        </div>
-        <div class="changement-div ">
- 
+                 <div class="stadium-item">
+                     <img src="/image/st-removebg-preview.png" alt="">
+                 </div>
 
-        </div>
-    </section>
-    <section class="changement" style="height: 400px; width: 30%; background-color: rgb(11, 12, 12); margin-top: 20px;">
-      <div class="" style="margin-left: 60px; margin-top: 10px; color: aliceblue;">banque de remplassement</div>
-    </section>
 
-    <section class="page-remplissage-container" style=" position: absolute; margin-left: 50px; margin-top: 100px; display: none;" >
+                 <div class="positions-item">
+                     <div class="attack-div">
+                        <div class="carte-dev"><div class="player-card1"></div><button class="bouton" id="lw">LW</button></div>
+                        <div class="carte-dev"><div class="player-card1"></div><button class="bouton" id="st">ST</button></div>
+                        <div class="carte-dev"><div class="player-card1"></div><button class="bouton" id="rw">RW</button></div>
+                     </div>
+                     <div class="milieu-div">
+                        <div class="carte-dev"><div class="player-card1"></div><button class="bouton" id="cm1">CM</button></div>
+                        <div class="carte-dev"><div class="player-card1"></div><button class="bouton" id="cm2">CM</button></div>
+                        <div class="carte-dev"><div class="player-card1"></div><button class="bouton" id="cm3">CM</button></div>
+                     </div>
+                     <div class="defense-div">
+                        <div class="carte-dev"><div class="player-card1"></div><button class="bouton" id="lb">LB</button></div>
+                        <div class="carte-dev"><div class="player-card1"></div><button class="bouton" id="cb1">CB</button></div>
+                        <div class="carte-dev"><div class="player-card1"></div><button class="bouton" id="cb2">CB</button></div>
+                        <div class="carte-dev"><div class="player-card1"></div><button class="bouton" id="rb">RB</button></div>
+                     </div>
+                     <div class="garde-div">
+                        <div class="carte-dev"><div class="player-card1"></div><button class="bouton" id="gk">GK</button></div>
+                     </div>
+                 </div>
+
+
+            </section>
+          <!-- ajouter la section de banque -->
+            <section class="changement" style="height: 400px; width: 30%; background-color: rgb(11, 12, 12); margin-top: 20px;">
+                 <div class="" style="margin-left: 60px; margin-top: 10px; color: aliceblue;">banque de remplassement</div>
+            </section>
+
+
+                <!-- ajouter une section absolute pour les cartes a afficher -->
+                   <section class="page-remplissage-container" style=" position: absolute;  margin-left: 50px; margin-top: 100px; display: none;" >
    
-        <div>
-            <button id="btnn" style="height: 20px; width: 150px; background-color: aliceblue; border: none; border-radius: 5px; margin-top: 10px; margin-left: 250px; cursor: pointer;">exit</button>
-        </div>
-        <div class="auto-remplissage-div" >
+                      <div>
+                          <button id="manuel-add" style="height: 20px; width: 80px; background-color: aliceblue; border: none; border-radius: 5px; margin-top: 10px; margin-left: 50px; cursor: pointer;">add</button>
+                          <span id="btnn" style="color: aliceblue; margin-left: 600px; cursor: pointer;" >X</span>
+                      </div>
+                      <div class="auto-remplissage-div" >
         
-        </div>
-        </section>
-</section>
-    <!-- la page de remplir -->
-<!-- <section class="page-remplissage-container" style=" position: absolute;" >
-   
-<div>
-    <button id="btnn" style="height: 20px; width: 150px; background-color: aliceblue; border: none; border-radius: 5px; margin-top: 10px; margin-left: 250px; cursor: pointer;">add</button>
-</div>
-<div class="auto-remplissage-div" >
+                      </div>
 
-</div>
-</section> -->
+                       <!-- ajouter la section de inputs dans la section des cartes -->
+                   <section class="page-manuel-remplir" style=" position: absolute; height: 250px; width: 100%; background-color: aliceblue; border-radius: 10px; margin: auto; top: -30px; display: none; ">
+                       <div></div>
+                   </section>
+                  </section>
 
-<!-- lacarte d'or des joueurs  -->
-<!-- <div class="player-card">
-    <div class="rating">ST</div>
-    <div class="image-div"><img  src="https://cdn.sofifa.net/players/158/023/25_120.png" alt=""></div>
-    <div class="name">Lionnel messi</div>
-      <div class="club-info">
-          <div class="nationality">argentine</div>
-          <img src="https://cdn.sofifa.net/flags/ar.png" alt="">
-          <img src="https://cdn.sofifa.net/meta/team/239235/120.png" alt="">
-      </div>
-      <div class="score">
-           <div class="score-1">
-               <div class="pas" > Pas:a</div>
-                <div class="shot" >Shoot:a</div>
-                <div class="pace" >Pace:a</div>
-           </div>
-           
-           <div class="score-2">
-               <div class="drib" >Drib:a</div>
-               <div class="phys" >Phys:a</div>
-               <div class="def" >Def:a</div>
-           </div>
-      </div>
-  </div> -->
+   </section>
+
   <script src="/index/script.js" defer></script>
 </body>
 </html>

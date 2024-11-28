@@ -77,6 +77,8 @@ document.querySelector(".auto-remplissage-div").innerHTML = cardes;
 };
 let btn=document.getElementById("lw");
 let btnn=document.getElementById("btnn");
+let add=document.getElementById("manuel-add");
+let pageRemplirManuel=document.querySelector(".page-manuel-remplir");
 
 let pageRemplissageContainer=document.querySelector(".page-remplissage-container");
 btn.addEventListener("click",function(){
@@ -84,6 +86,10 @@ btn.addEventListener("click",function(){
 });
 btnn.addEventListener("click",function(){
     pageRemplissageContainer.style.display="none"
+});
+
+add.addEventListener("click",function(){
+    pageRemplirManuel.style.display="block"
 });
 
 
