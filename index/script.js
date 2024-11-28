@@ -76,6 +76,7 @@ document.querySelector(".auto-remplissage-div").innerHTML = cardes;
 
 };
 let btn=document.getElementById("lw");
+let exitAll=document.getElementById("exit-all");
 let btnn=document.getElementById("btnn");
 let add=document.getElementById("manuel-add");
 let pageRemplirManuel=document.querySelector(".page-manuel-remplir");
@@ -88,9 +89,7 @@ btnn.addEventListener("click",function(){
     pageRemplissageContainer.style.display="none"
 });
 
-add.addEventListener("click",function(){
-    pageRemplirManuel.style.display="block"
-});
+
 
 
 
