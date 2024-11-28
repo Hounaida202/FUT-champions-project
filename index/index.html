@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta name="viewport" content=>
     <title>FUT</title>
-    <link rel="stylesheet" href="/index/index.css">
+    <link rel="stylesheet" href="/index/style.css">
 </head>
 <body>
     <header>
@@ -18,59 +18,88 @@
          <button>Sign in</button>
 
     </header>
-    <section>
+    <section class="flex">
+    <section class="stadium-container">
+        
         <div class="stadium-item">
             <img src="/image/st-removebg-preview.png" alt="">
         </div>
         <div class="positions-item">
               <div class="attack-div">
-                <div class="carte-dev"><div class="lw-div"></div><button>LW</button></div>
-                <div class="carte-dev"><div class="st-div"></div><button>ST</button></div>
-                <div class="carte-dev"><div class="rw-div"></div><button>RW</button></div>
+                <div class="carte-dev"><div class="player-card1"></div><button class="bouton" id="lw">LW</button></div>
+                <div class="carte-dev"><div class="player-card1"></div><button class="bouton" id="st">ST</button></div>
+                <div class="carte-dev"><div class="player-card1"></div><button class="bouton" id="rw">RW</button></div>
               </div>
               <div class="milieu-div">
-                <div class="carte-dev"><div class="cm-div"></div><button>CM</button></div>
-                <div class="carte-dev"><div class="cm-div"></div><button>CM</button></div>
-                <div class="carte-dev"><div class="cm-div"></div><button>CM</button></div>
+                <div class="carte-dev"><div class="player-card1"></div><button class="bouton" id="cm1">CM</button></div>
+                <div class="carte-dev"><div class="player-card1"></div><button class="bouton" id="cm2">CM</button></div>
+                <div class="carte-dev"><div class="player-card1"></div><button class="bouton" id="cm3">CM</button></div>
               </div>
               <div class="defense-div">
-                <div class="carte-dev"><div class="lb-div"></div><button>LB</button></div>
-                <div class="carte-dev"><div class="cb-div"></div><button>CB</button></div>
-                <div class="carte-dev"><div class="cb-div"></div><button>CB</button></div>
-                <div class="carte-dev"><div class="rb-div"></div><button>RB</button></div>
+                <div class="carte-dev"><div class="player-card1"></div><button class="bouton" id="lb">LB</button></div>
+                <div class="carte-dev"><div class="player-card1"></div><button class="bouton" id="cb1">CB</button></div>
+                <div class="carte-dev"><div class="player-card1"></div><button class="bouton" id="cb2">CB</button></div>
+                <div class="carte-dev"><div class="player-card1"></div><button class="bouton" id="rb">RB</button></div>
               </div>
               <div class="garde-div">
-                <div class="carte-dev"><div class="lw-div"></div><button>GK</button></div>
+                <div class="carte-dev"><div class="player-card1"></div><button class="bouton" id="gk">GK</button></div>
               </div>
         </div>
-        <div class="changement-div">
-
-
-
-
-
-
-
+        <div class="changement-div ">
+ 
 
         </div>
     </section>
-    <!-- la page de remplir -->
-<section class="page-remplissage-container">
-<div class="auto-remplissage-div">
-       <button>auto</button>
-       <div class="auto-div">
+    <section class="changement" style="height: 400px; width: 30%; background-color: rgb(11, 12, 12); margin-top: 20px;">
+      <div class="" style="margin-left: 60px; margin-top: 10px; color: aliceblue;">banque de remplassement</div>
+    </section>
 
-       </div>
-</div>
-<div class="manuel-remplissage-div">
-    <button>manuel</button>
-    <div class="manuel-div">
-
-    </div>
-</div>
-
+    <section class="page-remplissage-container" style=" position: absolute; margin-left: 50px; margin-top: 100px; display: none;" >
+   
+        <div>
+            <button id="btnn" style="height: 20px; width: 150px; background-color: aliceblue; border: none; border-radius: 5px; margin-top: 10px; margin-left: 250px; cursor: pointer;">exit</button>
+        </div>
+        <div class="auto-remplissage-div" >
+        
+        </div>
+        </section>
 </section>
+    <!-- la page de remplir -->
+<!-- <section class="page-remplissage-container" style=" position: absolute;" >
+   
+<div>
+    <button id="btnn" style="height: 20px; width: 150px; background-color: aliceblue; border: none; border-radius: 5px; margin-top: 10px; margin-left: 250px; cursor: pointer;">add</button>
+</div>
+<div class="auto-remplissage-div" >
 
+</div>
+</section> -->
 
+<!-- lacarte d'or des joueurs  -->
+<!-- <div class="player-card">
+    <div class="rating">ST</div>
+    <div class="image-div"><img  src="https://cdn.sofifa.net/players/158/023/25_120.png" alt=""></div>
+    <div class="name">Lionnel messi</div>
+      <div class="club-info">
+          <div class="nationality">argentine</div>
+          <img src="https://cdn.sofifa.net/flags/ar.png" alt="">
+          <img src="https://cdn.sofifa.net/meta/team/239235/120.png" alt="">
+      </div>
+      <div class="score">
+           <div class="score-1">
+               <div class="pas" > Pas:a</div>
+                <div class="shot" >Shoot:a</div>
+                <div class="pace" >Pace:a</div>
+           </div>
+           
+           <div class="score-2">
+               <div class="drib" >Drib:a</div>
+               <div class="phys" >Phys:a</div>
+               <div class="def" >Def:a</div>
+           </div>
+      </div>
+  </div> -->
+  <script src="/index/script.js" defer></script>
 </body>
 </html>
+
