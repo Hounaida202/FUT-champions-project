@@ -82,6 +82,9 @@ let pageRemplissageContainer=document.querySelector(".page-remplissage-container
 btn.addEventListener("click",function(){
     pageRemplissageContainer.style.display="block"
 });
+btnn.addEventListener("click",function(){
+    pageRemplissageContainer.style.display="none"
+});
 
 
 
