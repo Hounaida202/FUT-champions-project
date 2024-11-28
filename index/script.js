@@ -16,7 +16,22 @@
 // });
         
 
+fetch("./players.json")
+.then(response => {
+if(!response.ok){
+    alert("errur de recuperation des data");
+}
+return response.json();
+})
 
+.then(data => {
+    fonction(data);
+})
+
+.catch(error => {
+    alert("errur");
+
+});
 
 
 
