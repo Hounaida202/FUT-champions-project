@@ -84,6 +84,10 @@ pageRemplissageContainer.style.display="block"
 
 });
 
+function afficherJoueursFiltré(parametrepPourPlayer,parametrePourPosition){
+    let joueursfiltré=parametrepPourPlayer.filter(joueur=>joueur.position===parametrePourPosition)
+     FonctionAfficher(joueursfiltré);
+    }
 
 // les fonction des quitter et entrer
 let exitAll=document.getElementById("exit-all");
