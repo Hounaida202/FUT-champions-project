@@ -38,6 +38,8 @@ header button{
     width: 80px;
 }
 
+
+
  /* la section de positions des joueurs et le terrain  */
 body{
     background-color: rgb(16, 60, 16);
@@ -80,7 +82,7 @@ gap: 30px;
     justify-content: start;
     gap: 60px;
     }
-    .defense-div{
+.defense-div{
         margin-left: auto;
         margin-right: auto;
         display: flex;
@@ -89,7 +91,7 @@ gap: 30px;
         }
 
 
-        .garde-div{
+.garde-div{
             margin-left: auto;
             margin-right: auto;
             display: flex;
@@ -115,24 +117,22 @@ gap: 30px;
             background: none;
         }
         .bouton:hover{
-color: orange;        }
+            color: orange;       
+         }
 
 
-        .lw-div:hover{
+        /* .lw-div:hover{
             box-shadow: 10px;
-        }
+        } */
 
-        la carte du joueur
+       /* --------------------- la carte du joueur vide dans le stadium*/
+
         .name{
             font-size: 200%;
             margin-left: 40%;
             padding-top: 5%;
         }
-        .logo{
-            height: 30%;
-            width: 30%; 
-        }
-        .flag{
+        .logo ,.flag{
             height: 30%;
             width: 30%; 
         }
@@ -148,18 +148,13 @@ color: orange;        }
             margin-top: 10%;
         }
 
-        .position{
+        .position, .flag{
             margin-bottom: 5%;
             margin-left: 15%;
         }
         .nationality{
             margin-bottom: 5%;
         }
-        .flag{
-            margin-bottom: 5%;
-            margin-left: 15%;
-        }
-
         .player-card{
 
             height: 70px;
@@ -205,10 +200,10 @@ overflow-x: auto;
     width: 80px;
     flex-shrink: 0;
 }
-.carte:hover{
+/* .carte:hover{
     box-shadow: 0px 0px 10px rgba(9, 240, 55, 0.5);
 
-}
+} */
 .auto-remplissage-div::-webkit-scrollbar{
     display: none;
 }
@@ -278,4 +273,53 @@ margin-top: 3px;    /* display: flex; justify-content: space-evenly; margin-top:
 .flex{
     display: flex;
     position: relative;
+}
+
+/* 6666666666666666666666666 */
+.player-card22{
+    height: 70px;
+    width: 60px;
+    background-image: url('/image/card-golden.png');
+    background-size: 100% 100%;
+    background-color: antiquewhite;
+    border-radius: 5%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+.rating22{
+    font-size: 5%; margin-left: 10%; padding-top: 2%;
+}
+
+.image-div22{
+    height: 35%;
+    width: 46%;
+    border: 1px solid gold;
+    border-radius: 50%;
+    margin: auto;
+}
+.image-div22 img{
+    height: 85%; margin-left: 7%;
+}
+.name22{
+    display: flex; justify-content: center; font-size: 10%;
+}
+.club-info22{
+    display: flex; justify-content: space-evenly; margin-top: 5%;
+}
+.club-info22 div{
+    font-size:5px;
+}
+.club-info22 img{
+    height: 5px;   
+ }
+.score22{
+    margin-top: 10%; 
+}
+.score-122{
+    display: flex; gap: 8%; margin-left: 8%;
+}
+.score-222{
+    display: flex; gap: 8%; margin-left: 8%; margin-top: 8%;
+}
+.score22 div div{
+    font-size: 4px;
 }
