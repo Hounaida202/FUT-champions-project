@@ -48,6 +48,35 @@ afficherJoueursFiltré(data.players,"CM");
 pageRemplissageContainer.style.display="block"
 
 });
+let lb=document.getElementById("lb");
+lb.addEventListener("click", function(){
+afficherJoueursFiltré(data.players,"LB");
+pageRemplissageContainer.style.display="block"
+
+});
+let cb1=document.getElementById("cb1");
+cb1.addEventListener("click", function(){
+afficherJoueursFiltré(data.players,"CB");
+pageRemplissageContainer.style.display="block"
+
+});
+let cb2=document.getElementById("cb2");
+cb2.addEventListener("click", function(){
+afficherJoueursFiltré(data.players,"CB");
+pageRemplissageContainer.style.display="block"
+
+});
+let rb=document.getElementById("rb");
+rb.addEventListener("click", function(){
+afficherJoueursFiltré(data.players,"RB");
+pageRemplissageContainer.style.display="block"
+
+});
+let gk=document.getElementById("gk");
+gk.addEventListener("click", function(){
+afficherJoueursFiltré(data.players,"GK");
+pageRemplissageContainer.style.display="block"
+});
 
 })
 .catch(error => {
