@@ -30,6 +30,24 @@ return response.json();
     pageRemplissageContainer.style.display="block"
     
     });
+    let cm1=document.getElementById("cm1");
+cm1.addEventListener("click", function(){
+afficherJoueursFiltré(data.players,"CM");
+pageRemplissageContainer.style.display="block"
+
+});
+let cm2=document.getElementById("cm2");
+cm2.addEventListener("click", function(){
+afficherJoueursFiltré(data.players,"CM");
+pageRemplissageContainer.style.display="block"
+
+});
+let cm3=document.getElementById("cm3");
+cm3.addEventListener("click", function(){
+afficherJoueursFiltré(data.players,"CM");
+pageRemplissageContainer.style.display="block"
+
+});
 
 })
 .catch(error => {
