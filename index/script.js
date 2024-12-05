@@ -581,7 +581,81 @@ function deplacement(queldiv,position){
      }
      }
  //  --------fonction pour entrer les infos du joueur creer par le user------
-     
+ function ajouterParUser(iddedev) {
+    let name = document.getElementById("name").value.trim();
+    let nationality = document.getElementById("nationality").value.trim();
+    let club = document.getElementById("club").value.trim();
+    let photo = document.getElementById("photo").value.trim();
+    let flag = document.getElementById("flag").value.trim();
+    let logo = document.getElementById("logo").value.trim();
+    let rating = document.getElementById("rating").value.trim();
+    let pace = document.getElementById("pace").value.trim();
+    let shooting = document.getElementById("shooting").value.trim();
+    let passing = document.getElementById("passing").value.trim();
+    let dribbling = document.getElementById("dribbling").value.trim();
+    let defending = document.getElementById("defending").value.trim();
+    let physical = document.getElementById("physical").value.trim();
+    let divchoisi = document.getElementById(iddedev);
+    if ((rating === "" || isNaN(rating)) || (physical === "" || isNaN(physical)) ||
+    (pace === "" || isNaN(pace)) || (shooting === "" || isNaN(shooting)) || (passing === "" || isNaN(passing))||(dribbling === "" || isNaN(dribbling))||(defending === "" || isNaN(defending))) {
+        alert("Veuillez entrer une note validé");
+        return;
+    }
+    if ((!photo.startsWith("http://") && !photo.startsWith("https://")) ||
+     (!logo.startsWith("https://") && !photo.startsWith("http://")) || 
+    (!flag.startsWith("https://") && !flag.startsWith("http://")) ) {
+        alert("La photo doit être une URL validé");
+        return;
+    }
+    if (name === "" || nationality === "" || club === "") {
+        alert("Tous les champs obligatoires doivent être remplis !");
+        return;
+    }
+else {
+    let inputCarte = `
+        <div class="carte">
+            <div class="player-card-js">
+                <div class="rating">${rating}</div>
+                <div class="image-div"><img src="${photo}" alt=""></div>
+                <div class="name">${name}</div>
+                <div class="club-info">
+                    <div class="flag-div">
+                        <div class="nationality">${nationality}</div>
+                        <img src="${flag}" alt="Flag">
+                    </div>
+                    <div class="club-div">
+                        <div class="club">${club}</div>
+                        <img src="${logo}" alt="Club Logo">
+                    </div>
+                </div>
+                <div class="score">
+                    <div class="score-1">
+                        <div class="pas">Pas: ${passing}</div>
+                        <div class="shot">Shoot: ${shooting}</div>
+                        <div class="pace">Pace: ${pace}</div>
+                    </div>
+                    <div class="score-2">
+                        <div class="drib">Drib: ${dribbling}</div>
+                        <div class="phys">Phys: ${physical}</div>
+                        <div class="def">Def: ${defending}</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    `;
+    let nouveauCarte = document.createElement("div");
+    nouveauCarte.classList.add("scale"); 
+    nouveauCarte.innerHTML = inputCarte; 
+    divchoisi.appendChild(nouveauCarte);
+     }
+}
+let choix=document.getElementById("choices");
+let btn2 = document.getElementById("addplayer");
+btn2.addEventListener("click", function (event) {
+        ajouterParUser(choix.value);
+        pageRemplissageContainer.style.display = "none";
+        pageRemplirManuel.style.display = "none";
+});
 // ----- la fonction pour donner actions aux X pour supprimer le contenu-------
 function clearAllChildren(containerId,btnid) {
     let container = document.getElementById(containerId);
