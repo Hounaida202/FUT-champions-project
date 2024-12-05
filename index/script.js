@@ -538,7 +538,28 @@ function afficherJoueursFiltré(parametrepPourPlayer,parametrePourPosition){
         container.innerHTML=carte;
         container2.innerHTML=carte;
     }
- 
+    deplacement("gk","GK")
+    deplacement("cml","CML")
+    deplacement("cmc","CMC")
+    deplacement("cmr","CMR")
+    deplacement("lw","LW")
+    deplacement("st","ST")
+    deplacement("rb","RB")
+    deplacement("cbl","CBL")
+    deplacement("cbr","CBR")
+    deplacement("lb","LB")
+    deplacement("rw","RW")
+    clearAllChildren("gk","gk-delate");
+    clearAllChildren("cml","cml-delate");
+    clearAllChildren("cmc","cmc-delate");
+    clearAllChildren("cmr","cmr-delate");
+    clearAllChildren("lw","lw-delate");
+    clearAllChildren("st","st-delate");
+    clearAllChildren("rb","rb-delate");
+    clearAllChildren("cbl","cbl-delate");
+    clearAllChildren("cbr","cbr-delate");
+    clearAllChildren("lb","lb-delate");
+    clearAllChildren("rw","rw-delate");
 
 }
 // -------- la fonction qui deplace les cartes vers leurs positions--------------
@@ -562,7 +583,13 @@ function deplacement(queldiv,position){
  //  --------fonction pour entrer les infos du joueur creer par le user------
      
 // ----- la fonction pour donner actions aux X pour supprimer le contenu-------
-
+function clearAllChildren(containerId,btnid) {
+    let container = document.getElementById(containerId);
+    let removebtn=document.getElementById(btnid);
+    removebtn.addEventListener("click",function(){
+    container.innerHTML = ""; 
+    });
+}
 // les fonction des quitter et entrer
 btnn.addEventListener("click",function(){
     pageRemplissageContainer.style.display="none"
