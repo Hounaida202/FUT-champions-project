@@ -44,6 +44,7 @@ header button{
 body{
     background-color: rgb(16, 60, 16);
 }
+
 .stadium-container{
     width: 70%;
     display: flex;
@@ -65,6 +66,10 @@ body{
     flex-direction: column;
     padding-left: 11%;
     padding-top: 3%;
+    
+}
+.player-card1{
+    position: relative;
 }
 
 .attack-div{
@@ -119,17 +124,23 @@ gap: 30px;
         .bouton:hover{
             color: orange;       
          }
+/* la section de banque de remplacement */
+.changement{
+    height: 400px; width: 160%; background-color: rgb(11, 12, 12); margin-top: 20px;
+}
+.banque-expression{
+    margin-left: 60px; margin-top: 10px; color: aliceblue;
+}
+.div-placer-les-cartes-remplacement{
+    width: 200px; margin: auto; margin-top: 40px; display: flex; flex-wrap: wrap; gap: 20px;
+}
 
-
-        /* .lw-div:hover{
-            box-shadow: 10px;
-        } */
 
        /* --------------------- la carte du joueur vide dans le stadium*/
 
         .name{
             font-size: 200%;
-            margin-left: 40%;
+            margin: auto;
             padding-top: 5%;
         }
         .logo ,.flag{
@@ -186,31 +197,32 @@ gap: 30px;
     margin: auto;
     border-radius: 10px;
 }
+.page-remplissage-container{
+    position: absolute;  margin-left: 50px; margin-top: 100px; display: none;
+}
 .auto-remplissage-div{
 max-width: 500px;
 height: 120px;
 margin: auto;
 margin-top: 20px;
 display: flex;
-gap: 10px;
+gap: 20px;
 overflow-x: auto;
 }
 .carte{
     height: 100px;
     width: 80px;
     flex-shrink: 0;
-}
-/* .carte:hover{
-    box-shadow: 0px 0px 10px rgba(9, 240, 55, 0.5);
 
-} */
+}
+
 .auto-remplissage-div::-webkit-scrollbar{
     display: none;
 }
  /* ajouter la carte d'or des players  */
  .player-card-js{
     height: 100px;
-    width: 80px;
+    width: 90px;
     background-image: url('/image/card-golden.png');
     background-size: 100% 100%;
     background-color: antiquewhite;
@@ -229,6 +241,12 @@ overflow-x: auto;
 .rating{
     font-size: 10px; margin-left: 5px; padding-top: 2%;
 }
+.input1-div,.input2-div,.input3-div,.input4-div,.input5-div{
+    display: flex; justify-content: space-evenly; margin-top: 20px;
+}
+#addplayer{
+    margin-top: 20px; margin-left: 20px; width: 50px;
+}
 
 .image-div{
     height: 35%;
@@ -241,10 +259,10 @@ overflow-x: auto;
     height: 85%; margin-left: 7%;
 }
 .name{
-    display: flex; justify-content: center; font-size: 5px;
+    display: flex; margin-left: 20px; font-size: 5px;
 }
 .club-info{
-margin-top: 3px;    /* display: flex; justify-content: space-evenly; margin-top: 5%; */
+margin-top: 3px;   
 }
 .club-div,.flag-div{
     display: flex; 
@@ -275,7 +293,7 @@ margin-top: 3px;    /* display: flex; justify-content: space-evenly; margin-top:
     position: relative;
 }
 
-/* 6666666666666666666666666 */
+/* --------------------------------  */
 .player-card22{
     height: 70px;
     width: 60px;
@@ -322,4 +340,121 @@ margin-top: 3px;    /* display: flex; justify-content: space-evenly; margin-top:
 }
 .score22 div div{
     font-size: 4px;
+}
+.scale {
+    transform: scale(0.7);
+    position: absolute;
+    top: -15px;
+    left: -15px;
+}
+.remove-edit{  
+    display: none;
+}
+.remove-edit button{
+    background-color: green;
+}
+.page-manuel-remplir{
+ position: absolute; height: 300px; width: 100%; background-color: aliceblue; border-radius: 10px; margin: auto; top: -30px; display: none;
+}
+#exit-all{
+    margin-left: 750px; margin-top: 10px; color: black; cursor: pointer;
+}
+#btnn{
+    color: aliceblue; margin-left: 600px; cursor: pointer;
+}
+#manuel-add{
+    height: 20px; width: 80px; background-color: aliceblue; border: none; border-radius: 5px; margin-top: 10px; margin-left: 50px; cursor: pointer;
+}
+
+@media (max-width: 768px) {
+.flex{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.changement{
+    width: 150%;
+    height: 300px;
+}
+body,html{
+    height: 100%;
+    width: 100%;
+}
+.positions-item{
+    position:absolute;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20%;
+    padding-top: 25%;
+    gap: 50px;
+    } 
+    .stadium-item img{
+        height: 700px;
+        width: 550px;
+        }
+        .stadium-container{
+            width: 1000px;
+        }
+        header{
+            background-color: rgb(2, 2, 1);
+            height: 60px;
+            width:125vw;
+            display: flex;
+        
+        }
+        header h3{
+            color: white;
+        display: flex;
+        align-items: center;
+        }
+        .input1-div ,#addplayer,.input2-div , .input3-div,.input4-div,.input5-div{
+            display: flex;
+            flex-direction: column;
+            gap:10px;
+            margin-left: 40px;
+        }
+        .input1-div input ,.input2-div input,.input3-div input,.input5-div input,.input4-div input,#choices {
+           width: 250px;
+        }
+        #page-manuel-remplir{
+height: 600px;
+margin-left: 40px;
+        }
+        #exit-all{
+            margin-left: 300px;
+            margin-bottom: 50px;
+        }
+        #btnn{
+margin-left: 300px;
+
+}
+#manuel-add{
+    margin-top: 10px;
+}
+header button{
+display: none;
+}
+header div input{
+    margin-left: 20px;
+    }
+    .auto-remplissage-div{
+        max-width: 400px;
+        height: 120px;
+        margin: auto;
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        overflow-x: auto;
+        }
+        .page-remplissage-container{
+            height: 200px;
+            width: 80%;
+            background-color: rgb(12, 32, 6);
+            margin: auto;
+            border-radius: 10px;
+            margin-left: 100px;
+            margin-top: 200px;
+        }
 }

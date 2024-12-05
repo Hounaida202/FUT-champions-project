@@ -2,11 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content=>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FUT</title>
     <link rel="stylesheet" href="/index/style.css">
 </head>
-<body>
+
+<body >
      <!-- ajouter le navbar  -->
     <header>
         <div>
@@ -23,88 +24,124 @@
     <section class="flex">
         <!-- ajouter la section du stadium -->
              <section class="stadium-container">
-
-        
                  <div class="stadium-item">
                      <img src="/image/st-removebg-preview.png" alt="">
                  </div>
-
-
                  <div class="positions-item">
                      <div class="attack-div">
-                        <div class="carte-dev"><div class="player-card1"></div><button class="bouton" id="lw" onclick="fonction(LW)">LW</button></div>
-                        <div class="carte-dev"><div class="player-card1"></div><button class="bouton" id="st" onclick="fonction(ST)">ST</button></div>
-                        <div class="carte-dev"><div class="player-card1"></div><button class="bouton" id="rw" onclick="fonction(LW)">RW</button></div>
+                        <div class="carte-dev">
+                            <div class="player-card1" id="lw"></div>
+                            <button class="bouton" id="lw-delate" >X</button>
+                        </div>
+                        <div class="carte-dev">
+                            <div class="player-card1" id="st"></div>
+                            <button class="bouton" id="st-delate">X</button>
+                        </div>
+                        <div class="carte-dev">
+                            <div class="player-card1" id="rw"></div>
+                            <button class="bouton" id="rw-delate" >X</button>
+                        </div>
                      </div>
                      <div class="milieu-div">
-                        <div class="carte-dev"><div class="player-card1"></div><button class="bouton" id="cm1" onclick="fonction(LW)">CM</button></div>
-                        <div class="carte-dev"><div class="player-card1"></div><button class="bouton" id="cm2" onclick="fonction(LW)">CM</button></div>
-                        <div class="carte-dev"><div class="player-card1"></div><button class="bouton" id="cm3" onclick="fonction(LW)">CM</button></div>
+                        <div class="carte-dev">
+                            <div class="player-card1" id="cml" ></div>
+                            <button class="bouton" id="cml-delate" >X</button>
+                        </div>
+                        <div class="carte-dev">
+                            <div class="player-card1" id="cmc"></div>
+                            <button class="bouton" id="cmc-delate" >X</button>
+                        </div>
+                        <div class="carte-dev">
+                            <div class="player-card1" id="cmr"></div>
+                            <button class="bouton" id="cmr-delate" >X</button>
+                        </div>
                      </div>
                      <div class="defense-div">
-                        <div class="carte-dev"><div class="player-card1"></div><button class="bouton" id="lb" onclick="fonction(LW)">LB</button></div>
-                        <div class="carte-dev"><div class="player-card1"></div><button class="bouton" id="cb1" onclick="fonction(LW)">CB</button></div>
-                        <div class="carte-dev"><div class="player-card1"></div><button class="bouton" id="cb2" onclick="fonction(LW)">CB</button></div>
-                        <div class="carte-dev"><div class="player-card1"></div><button class="bouton" id="rb" onclick="fonction(LW)">RB</button></div>
+                        <div class="carte-dev">
+                            <div class="player-card1" id="lb"></div>
+                            <button class="bouton" id="lb-delate">X</button>
+                        </div>
+                        <div class="carte-dev">
+                            <div class="player-card1" id="cbl"></div>
+                            <button class="bouton" id="cbl-delate">X</button>
+                        </div>
+                        <div class="carte-dev">
+                            <div class="player-card1" id="cbr"></div>
+                            <button class="bouton" id="cbr-delate" >X</button>
+                        
+                        </div>
+                        <div class="carte-dev">
+                            <div class="player-card1" id="rb"></div>
+                            <button class="bouton" id="rb-delate">X</button></div>
                      </div>
                      <div class="garde-div">
-                        <div class="carte-dev"><div class="player-card1" id="gk-carte"></div><button class="bouton" id="gk" onclick="fonction(LW)">GK</button></div>
+                        <div class="carte-dev">
+                            <div class="player-card1" id="gk"></div>
+                            <button class="bouton"  id="gk-delate">X</button>
+                        </div>
                      </div>
                  </div>
-
-
             </section>
-          <!-- ajouter la section de banque -->
-            <section class="changement" style="height: 400px; width: 30%; background-color: rgb(11, 12, 12); margin-top: 20px;">
-                 <div class="" style="margin-left: 60px; margin-top: 10px; color: aliceblue;">banque de remplassement</div>
+        <!-- ajouter la section de banque -->
+            <section class="changement">
+                 <div class="banque-expression">banque de remplassement</div>
+                 <div class="div-placer-les-cartes-remplacement">
+                 </div>
             </section>
-
-
-                <!-- ajouter une section absolute pour les cartes a afficher -->
-                   <section class="page-remplissage-container" style=" position: absolute;  margin-left: 50px; margin-top: 100px; display: none;" >
-   
+        <!-- ajouter une section absolute pour les cartes a afficher -->
+                <section class="page-remplissage-container">
                       <div>
-                          <button id="manuel-add" style="height: 20px; width: 80px; background-color: aliceblue; border: none; border-radius: 5px; margin-top: 10px; margin-left: 50px; cursor: pointer;">add</button>
-                          <span id="btnn" style="color: aliceblue; margin-left: 600px; cursor: pointer;" >X</span>
+                          <button id="manuel-add" >add</button>
+                          <span id="btnn"  >X</span>
                       </div>
                       <div class="auto-remplissage-div" >
-        
                       </div>
-
-                       <!-- ajouter la section de inputs dans la section des cartes -->
-                   <section class="page-manuel-remplir" style=" position: absolute; height: 300px; width: 100%; background-color: aliceblue; border-radius: 10px; margin: auto; top: -30px; display: none; ">
-                    <div id="exit-all" style="margin-left: 750px; margin-top: 10px; color: black; cursor: pointer;">X</div>
-                    <div style="display: flex; justify-content: space-evenly; margin-top: 20px;">
-                        <input type="text" placeholder="name">
-                        <input type="text" placeholder="nationalité">
-                        <input type="text" placeholder="club">
-
+        <!-- ajouter la section de inputs dans la section des cartes -->
+                   <section class="page-manuel-remplir" id="page-manuel-remplir">
+                    <div id="exit-all" >X</div>
+                    <div class="form-div">
+                        <div class="input1-div">
+                            <input type="text" placeholder="name" id="name">
+                            <input type="text" placeholder="nationalité" id="nationality">
+                            <input type="text" placeholder="club" id="club">
+                        </div>
+                        <div class="input2-div">
+                            <input type="text" placeholder="photo" id="photo">
+                            <input type="text" placeholder="flag" id="flag">
+                            <input type="text" placeholder="logo" id="logo">
+                        </div>
+                        <div class="input3-div">
+                            <select id="choices">
+                                <option value="lw" id="optionlw">LW</option>
+                                <option value="st" id="optionst">ST</option>
+                                <option value="rw" id="optionrw">RW</option>
+                                <option value="cml"  id="optioncml">CML</option>
+                                <option value="cmc" id="optioncmc">CMC</option>
+                                <option value="cmr"  id="optioncmr">CMR</option>
+                                <option value="lb" id="optionlb">LB</option>
+                                <option value="cbl" id="optioncbl">CBL</option>
+                                <option value="cbr" id="optioncbr">CBR</option>
+                                <option value="rb" id="optionrb">RB</option>
+                                <option value="gk"  id="optiongk">GK</option>
+                            </select>
+                            <input type="text" placeholder="rating" id="rating">
+                        </div>
+                        <div class="input4-div">
+                            <input type="text" placeholder="pace" id="pace">
+                            <input type="text" placeholder="shooting" id="shooting">
+                            <input type="text" placeholder="passing" id="passing">
+                        </div>
+                        <div class="input5-div">
+                            <input type="text" placeholder="dribbling" id="dribbling">
+                            <input type="text" placeholder="defending" id="defending">
+                            <input type="text" placeholder="physicale" id="physical">
+                        </div>
+                        <button id="addplayer" type="submit">Add player</button>
                     </div>
-                    <div style="display: flex; justify-content: space-evenly; margin-top: 20px;">
-                        <input type="text" placeholder="photo">
-                        <input type="text" placeholder="flag">
-                        <input type="text" placeholder="logo">
-
-                    </div>
-                    <div style="display: flex; justify-content: space-evenly; margin-top: 20px;">
-                        <input type="text" placeholder="position">
-                        <input type="text" placeholder="rating">
-
-                    </div>
-                    <div style="display: flex; justify-content: space-evenly; margin-top: 20px;">
-                        <input type="text" placeholder="pace">
-                        <input type="text" placeholder="shooting">
-                        <input type="text" placeholder="passing">
-
-                    </div>
-                    <div style="display: flex; justify-content: space-evenly; margin-top: 20px;">
-                        <input type="text" placeholder="dribbling">
-                        <input type="text" placeholder="defending">
-                        <input type="text" placeholder="physicale">
-
-                    </div>
+                <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
                    </section>
                   </section>
+                  <!-- creer une carte a ajouter dans l input -->
 
    </section>
 
